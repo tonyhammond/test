@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+	<rdf:type rdf:resource="http://schema.semantic-web.at/ppt/CustomSchema"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">NPG</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.nature.com/terms/Subject">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+	<containsCustomType xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/terms/Subject"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.nature.com/terms/email">
+	<rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+	<containsAttributeProperty xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/terms/email"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.nature.com/terms/code">
+	<rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+	<containsAttributeProperty xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/terms/code"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.nature.com/terms/hash">
+	<rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+	<containsAttributeProperty xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/terms/hash"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.nature.com/terms/id">
+	<rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+	<containsAttributeProperty xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/terms/id"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.nature.com/terms/submittedBy">
+	<rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+	<containsAttributeProperty xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/terms/submittedBy"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+	<rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+	<containsAttributeProperty xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/terms/isPublishReady"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.nature.com/terms/email">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">email</label>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ns.nature.com/terms/Subject"/>
+	<skosDomain xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<valueRestriction xmlns="http://schema.semantic-web.at/ppt/">LITERAL</valueRestriction>
+	<unique xmlns="http://schema.semantic-web.at/ppt/" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</unique>
+	<hasVersion xmlns="http://purl.org/dc/terms/">4.2.0</hasVersion>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.nature.com/terms/code">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">code</label>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ns.nature.com/terms/Subject"/>
+	<skosDomain xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<valueRestriction xmlns="http://schema.semantic-web.at/ppt/">LITERAL</valueRestriction>
+	<unique xmlns="http://schema.semantic-web.at/ppt/" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</unique>
+	<hasVersion xmlns="http://purl.org/dc/terms/">4.2.0</hasVersion>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.nature.com/terms/hash">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">hash</label>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ns.nature.com/terms/Subject"/>
+	<skosDomain xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<valueRestriction xmlns="http://schema.semantic-web.at/ppt/">LITERAL</valueRestriction>
+	<unique xmlns="http://schema.semantic-web.at/ppt/" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</unique>
+	<hasVersion xmlns="http://purl.org/dc/terms/">4.2.0</hasVersion>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">isPublishReady</label>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ns.nature.com/terms/Subject"/>
+	<skosDomain xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<valueRestriction xmlns="http://schema.semantic-web.at/ppt/">BOOLEAN</valueRestriction>
+	<unique xmlns="http://schema.semantic-web.at/ppt/" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</unique>
+	<hasVersion xmlns="http://purl.org/dc/terms/">4.2.0</hasVersion>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.nature.com/terms/Subject">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Subject</label>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.nature.com/terms/id">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">id</label>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ns.nature.com/terms/Subject"/>
+	<skosDomain xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<valueRestriction xmlns="http://schema.semantic-web.at/ppt/">LITERAL</valueRestriction>
+	<unique xmlns="http://schema.semantic-web.at/ppt/" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</unique>
+	<hasVersion xmlns="http://purl.org/dc/terms/">4.2.0</hasVersion>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ns.nature.com/terms/submittedBy">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">submittedBy</label>
+	<domain xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://ns.nature.com/terms/Subject"/>
+	<skosDomain xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<valueRestriction xmlns="http://schema.semantic-web.at/ppt/">LITERAL</valueRestriction>
+	<unique xmlns="http://schema.semantic-web.at/ppt/" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</unique>
+	<hasVersion xmlns="http://purl.org/dc/terms/">4.2.0</hasVersion>
+</rdf:Description>
+
+</rdf:RDF>
