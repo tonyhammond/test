@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/TonyTest">
+	<rdf:type rdf:resource="http://schema.semantic-web.at/ppt/CustomSchema"/>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">TonyTest</label>
+	<description xmlns="http://purl.org/dc/terms/">TonyTest</description>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/TonyTest/TonyTest">
+	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/TonyTest">
+	<containsCustomType xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://workingontologist.poolparty.biz/PoolParty/schema/TonyTest/TonyTest"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/TonyTest/TonyTest">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">TonyTest</label>
+</rdf:Description>
+
+</rdf:RDF>
