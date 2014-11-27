@@ -2,7 +2,7 @@
 <rdf:RDF
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
-<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/TonyTest">
 	<rdf:type rdf:resource="http://schema.semantic-web.at/ppt/CustomSchema"/>
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Tony</label>
 </rdf:Description>
@@ -11,7 +11,7 @@
 	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/TonyTest">
 	<containsCustomType xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/terms/Test"/>
 </rdf:Description>
 
@@ -19,7 +19,7 @@
 	<rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/TonyTest">
 	<containsAttributeProperty xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/terms/foo"/>
 </rdf:Description>
 
