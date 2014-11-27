@@ -4,7 +4,7 @@
 
 <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/TonyTest">
 	<rdf:type rdf:resource="http://schema.semantic-web.at/ppt/CustomSchema"/>
-	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Tony</label>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">TonyTest</label>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://ns.nature.com/terms/TonyTest">
@@ -14,5 +14,10 @@
 <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/TonyTest">
 	<containsCustomType xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/terms/TonyTest"/>
 </rdf:Description>
+
+<rdf:Description rdf:about="http://ns.nature.com/terms/TonyTest">
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">TonyTest</label>
+</rdf:Description>
+
 
 </rdf:RDF>
