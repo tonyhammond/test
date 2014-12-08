@@ -13,21 +13,6 @@
     <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/isPrimaryArticleType"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
-    <ppt:containsDirectedProperty rdf:resource="http://ns.nature.com/terms/hasJournal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
-    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Article"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
-    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Journal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
-    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Subject"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
-    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/XArticleType"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/CustomSchema"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
@@ -125,30 +110,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
     <label>isPublishReady</label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
-    <ppt:skosRange rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
-    <ppt:unique rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ppt:unique>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
-    <domain rdf:resource="http://ns.nature.com/terms/Article"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
-    <label>hasJournal</label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
-    <range rdf:resource="http://ns.nature.com/terms/Journal"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/isPrimaryArticleType">
     <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
