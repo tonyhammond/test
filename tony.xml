@@ -1,16 +1,174 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-
-
-<rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/TonyTestSchema">
-	<containsCustomType xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/terms/TonyTest"/>
-</rdf:Description>
-
-<rdf:Description rdf:about="http://ns.nature.com/terms/TonyTest">
-	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">TonyTest</label>
-</rdf:Description>
-
-
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:npg="http://ns.nature.com/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:ppt="http://schema.semantic-web.at/ppt/" xmlns:pptSchema="http://workingontologist.poolparty.biz/PoolParty/schema/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns="http://www.w3.org/2000/01/rdf-schema#">
+  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+    <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/code"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+    <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/id"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+    <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/isPublishReady"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+    <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/isPrimaryArticleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+    <ppt:containsDirectedProperty rdf:resource="http://ns.nature.com/terms/hasJournal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Article"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/XArticleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/CustomSchema"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+    <label>Tony</label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/Article">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/Article">
+    <label>Article</label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/Journal">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/Journal">
+    <label>Journal</label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/Subject">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/Subject">
+    <label>Subject</label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/XArticleType">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/XArticleType">
+    <label>Subject</label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <ppt:unique rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ppt:unique>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <domain rdf:resource="http://ns.nature.com/terms/XArticleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <label>code</label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <ppt:unique rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ppt:unique>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <domain rdf:resource="http://ns.nature.com/terms/XArticleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <label>id</label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <ppt:unique rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ppt:unique>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <ppt:valueRestriction>BOOLEAN</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <label>isPublishReady</label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
+    <ppt:skosRange rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
+    <ppt:unique rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ppt:unique>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
+    <domain rdf:resource="http://ns.nature.com/terms/Article"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
+    <label>hasJournal</label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
+    <range rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPrimaryArticleType">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPrimaryArticleType">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPrimaryArticleType">
+    <ppt:unique rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ppt:unique>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPrimaryArticleType">
+    <ppt:valueRestriction>BOOLEAN</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPrimaryArticleType">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPrimaryArticleType">
+    <domain rdf:resource="http://ns.nature.com/terms/XArticleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPrimaryArticleType">
+    <label>isPrimaryArticleType</label>
+  </rdf:Description>
 </rdf:RDF>
