@@ -13,6 +13,18 @@
     <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/isPrimaryArticleType"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Article"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
+    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/XArticleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/CustomSchema"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://workingontologist.poolparty.biz/PoolParty/schema/Tony">
