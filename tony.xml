@@ -55,7 +55,6 @@
     <label>Subject</label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/test/code">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/test/code">
     <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -79,7 +78,6 @@
     <label>code</label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/test/id">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/test/id">
     <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -103,7 +101,6 @@
     <label>id</label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/test/isPublishReady">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/test/isPublishReady">
     <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -124,7 +121,6 @@
     <label>isPublishReady</label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/test/isPrimaryArticleType">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/test/isPrimaryArticleType">
     <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
