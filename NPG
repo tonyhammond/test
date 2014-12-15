@@ -31,7 +31,7 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/CustomSchema"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
-    <label>Tony</label>
+    <label>NPG</label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/Article">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
