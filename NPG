@@ -16,16 +16,7 @@
     <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/treeDepth"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
-    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Article"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
-    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Journal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Subject"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
-    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/XArticleType"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/CustomSchema"/>

@@ -1,0 +1,76 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix npg: <http://ns.nature.com/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ppt: <http://schema.semantic-web.at/ppt/> .
+@prefix pptSchema: <https://raw.githubusercontent.com/tonyhammond/test/master/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix : <http://www.w3.org/2000/01/rdf-schema#> .
+
+npg:Article
+    a :Class ;
+    :label "Article" .
+
+npg:Journal
+    a :Class ;
+    :label "Journal" .
+
+npg:Subject
+    a :Class ;
+    :label "Subject" .
+
+npg:XArticleType
+    a :Class ;
+    :label "Subject" .
+
+npg:code
+    dcterms:hasVersion "4.2.0" ;
+    ppt:skosDomain skos:Concept ;
+    ppt:unique false ;
+    ppt:valueRestriction "LITERAL" ;
+    a ppt:AttributeProperty ;
+    :domain npg:Subject ;
+    :label "code" .
+
+npg:id
+    dcterms:hasVersion "4.2.0" ;
+    ppt:skosDomain skos:Concept ;
+    ppt:unique false ;
+    ppt:valueRestriction "LITERAL" ;
+    a ppt:AttributeProperty ;
+    :domain npg:Subject ;
+    :label "id" .
+
+npg:isPrimaryArticleType
+    dcterms:hasVersion "4.2.0" ;
+    ppt:skosDomain skos:Concept ;
+    ppt:unique true ;
+    ppt:valueRestriction "BOOLEAN" ;
+    a ppt:AttributeProperty ;
+    :domain npg:XArticleType ;
+    :label "isPrimaryArticleType" .
+
+npg:isPublishReady
+    dcterms:hasVersion "4.2.0" ;
+    ppt:skosDomain skos:Concept ;
+    ppt:unique true ;
+    ppt:valueRestriction "BOOLEAN" ;
+    a ppt:AttributeProperty ;
+    :domain npg:Subject ;
+    :label "isPublishReady" .
+
+npg:treeDepth
+    dcterms:hasVersion "4.2.0" ;
+    ppt:skosDomain skos:Concept ;
+    ppt:unique true ;
+    ppt:valueRestriction "LITERAL" ;
+    a ppt:AttributeProperty ;
+    :domain npg:XArticleType ;
+    :label "treeDepth" .
+
+pptSchema:NPG
+    ppt:containsAttributeProperty npg:code, npg:id, npg:isPrimaryArticleType, npg:isPublishReady, npg:treeDepth ;
+    ppt:containsCustomType npg:Article, npg:Journal, npg:Subject, npg:XArticleType ;
+    a ppt:CustomSchema ;
+    :label "NPG" .
+
