@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:npg="http://ns.nature.com/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:ppt="http://schema.semantic-web.at/ppt/" xmlns:pptSchema="https://raw.githubusercontent.com/NPGhammond/test/master/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns="http://www.w3.org/2000/01/rdf-schema#">
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/NPGhammond/test/master/NPG">
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:npg="http://ns.nature.com/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:ppt="http://schema.semantic-web.at/ppt/" xmlns:pptSchema="https://raw.githubusercontent.com/tonyhammond/test/master/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns="http://www.w3.org/2000/01/rdf-schema#">
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/code"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/NPGhammond/test/master/NPG">
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/id"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/NPGhammond/test/master/NPG">
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/isPublishReady"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/NPGhammond/test/master/NPG">
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/isPrimaryArticleType"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/NPGhammond/test/master/NPG">
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Article"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/NPGhammond/test/master/NPG">
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Journal"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/NPGhammond/test/master/NPG">
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Subject"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/NPGhammond/test/master/NPG">
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/XArticleType"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/NPGhammond/test/master/NPG">
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/CustomSchema"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/NPGhammond/test/master/NPG">
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <label>NPG</label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/Article">
