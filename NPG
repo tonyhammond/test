@@ -16,6 +16,12 @@
     <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/treeDepth"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
+    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Article"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
+    <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <ppt:containsCustomType rdf:resource="http://ns.nature.com/terms/Subject"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
@@ -40,12 +46,6 @@
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/Subject">
-    <label>Subject</label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/XArticleType">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/XArticleType">
     <label>Subject</label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/code">
@@ -106,7 +106,7 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/isPrimaryArticleType">
-    <domain rdf:resource="http://ns.nature.com/terms/XArticleType"/>
+    <domain rdf:resource="http://ns.nature.com/terms/Subject"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/isPrimaryArticleType">
     <label>isPrimaryArticleType</label>
@@ -148,7 +148,7 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/treeDepth">
-    <domain rdf:resource="http://ns.nature.com/terms/XArticleType"/>
+    <domain rdf:resource="http://ns.nature.com/terms/Subject"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/treeDepth">
     <label>treeDepth</label>
