@@ -25,6 +25,7 @@
 
 npg:issueStart
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
       rdfs:label "issueStart" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -33,6 +34,7 @@ npg:issueStart
 
 npg:email
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject ;
       rdfs:label "email" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -45,12 +47,14 @@ npg:PublishState
 
 npg:hasJournal
       a       ppt:DirectedProperty ;
+      rdfs:domain npg:Journal , npg:Blog ;
       rdfs:label "hasJournal" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept .
 
 npg:isRoot
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject , npg:ArticleType ;
       rdfs:label "isRoot" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -63,12 +67,14 @@ npg:Relation
 
 npg:hasPublicationGroup
       a       ppt:DirectedProperty ;
+      rdfs:domain npg:Journal ;
       rdfs:label "hasPublicationGroup" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept .
 
 npg:targetDomain
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal , npg:Blog ;
       rdfs:label "targetDomain" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -77,6 +83,7 @@ npg:targetDomain
 
 npg:primaryXmlId
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:ArticleType ;
       rdfs:label "primaryXmlId" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -85,18 +92,21 @@ npg:primaryXmlId
 
 npg:hasPublisher
       a       ppt:DirectedProperty ;
+      rdfs:domain npg:Journal ;
       rdfs:label "hasPublisher" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept .
 
 npg:hasSubject
       a       ppt:DirectedProperty ;
+      rdfs:domain npg:Journal ;
       rdfs:label "hasSubject" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept .
 
 npg:hash
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:Relation , npg:SummaryType , npg:Journal , npg:Blog ;
       rdfs:label "hash" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -105,6 +115,7 @@ npg:hash
 
 npg:volumeStart
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
       rdfs:label "volumeStart" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -117,6 +128,7 @@ npg:Subject
 
 npg:typeLabel
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject ;
       rdfs:label "typeLabel" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -125,6 +137,7 @@ npg:typeLabel
 
 npg:isPalgraveSubject
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject ;
       rdfs:label "isPalgraveSubject" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -133,6 +146,7 @@ npg:isPalgraveSubject
 
 npg:hasPrimaryArticleType
       a       ppt:DirectedProperty ;
+      rdfs:domain npg:ArticleType ;
       rdfs:label "hasPrimaryArticleType" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept .
@@ -149,6 +163,7 @@ pptSchema:NPG
 
 npg:dateStart
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal , npg:Blog ;
       rdfs:label "dateStart" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -157,6 +172,7 @@ npg:dateStart
 
 npg:subjectPath
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject , npg:Journal ;
       rdfs:label "subjectPath" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -165,12 +181,14 @@ npg:subjectPath
 
 npg:hasDomain
       a       ppt:DirectedProperty ;
+      rdfs:domain npg:Journal , npg:Blog ;
       rdfs:label "hasDomain" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept .
 
 npg:id
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:ArticleType , npg:SummaryType , npg:Relation , npg:Journal , npg:Blog ;
       rdfs:label "id" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -183,6 +201,7 @@ npg:Technique
 
 npg:isPublishReady
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:ArticleType , npg:Relation , npg:Journal , npg:SummaryType , npg:Blog ;
       rdfs:label "isPublishReady" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -195,12 +214,14 @@ npg:Journal
 
 npg:related
       a       ppt:DirectedProperty ;
+      rdfs:domain npg:Subject ;
       rdfs:label "related" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept .
 
 npg:xmlUriTemplate
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
       rdfs:label "xmlUriTemplate" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -209,6 +230,7 @@ npg:xmlUriTemplate
 
 npg:targetUriTemplate
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Database ;
       rdfs:label "targetUriTemplate" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -217,6 +239,7 @@ npg:targetUriTemplate
 
 npg:sortWeight
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
       rdfs:label "sortWeight" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -225,6 +248,7 @@ npg:sortWeight
 
 npg:assetFolderName
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
       rdfs:label "assetFolderName" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -233,6 +257,7 @@ npg:assetFolderName
 
 npg:volumeEnd
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
       rdfs:label "volumeEnd" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -241,6 +266,7 @@ npg:volumeEnd
 
 npg:domain
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject , npg:ArticleType , npg:Journal , npg:Blog ;
       rdfs:label "domain" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -249,12 +275,14 @@ npg:domain
 
 npg:replacedBy
       a       ppt:DirectedProperty ;
+      rdfs:domain npg:Journal ;
       rdfs:label "replacedBy" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept .
 
 npg:isLeaf
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject , npg:ArticleType ;
       rdfs:label "isLeaf" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -263,6 +291,7 @@ npg:isLeaf
 
 npg:subtypeLabel
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject ;
       rdfs:label "subtypeLabel" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -271,6 +300,7 @@ npg:subtypeLabel
 
 npg:content
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal , npg:Blog ;
       rdfs:label "content" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -279,6 +309,7 @@ npg:content
 
 npg:isIssueBased
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
       rdfs:label "isIssueBased" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -287,18 +318,21 @@ npg:isIssueBased
 
 npg:hasBlog
       a       ppt:DirectedProperty ;
+      rdfs:domain npg:Journal ;
       rdfs:label "hasBlog" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept .
 
 npg:hasRoot
       a       ppt:DirectedProperty ;
+      rdfs:domain npg:Subject , npg:ArticleType ;
       rdfs:label "hasRoot" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept .
 
 npg:status
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:ArticleType ;
       rdfs:label "status" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -307,6 +341,7 @@ npg:status
 
 npg:npgid
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
       rdfs:label "npgid" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -315,6 +350,7 @@ npg:npgid
 
 npg:pcode
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal , npg:Blog ;
       rdfs:label "pcode" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -323,6 +359,7 @@ npg:pcode
 
 npg:baseUriTemplate
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
       rdfs:label "baseUriTemplate" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -331,6 +368,7 @@ npg:baseUriTemplate
 
 npg:code
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:ArticleType , npg:Relation , npg:SummaryType , npg:Journal , npg:Blog ;
       rdfs:label "code" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -343,6 +381,7 @@ npg:Database
 
 npg:dateEnd
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal , npg:Blog ;
       rdfs:label "dateEnd" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -351,12 +390,14 @@ npg:dateEnd
 
 npg:replaces
       a       ppt:DirectedProperty ;
+      rdfs:domain npg:Journal ;
       rdfs:label "replaces" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept .
 
 npg:treeDepth
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject , npg:ArticleType ;
       rdfs:label "treeDepth" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -365,6 +406,7 @@ npg:treeDepth
 
 npg:xmlId
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:PublishState , npg:ArticleType ;
       rdfs:label "xmlId" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -373,6 +415,7 @@ npg:xmlId
 
 npg:sortLetter
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject ;
       rdfs:label "sortLetter" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -385,6 +428,7 @@ npg:ArticleType
 
 npg:submittedBy
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject ;
       rdfs:label "submittedBy" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
@@ -401,6 +445,7 @@ npg:Blog
 
 npg:issueEnd
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
       rdfs:label "issueEnd" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;

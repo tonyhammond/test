@@ -4,6 +4,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/issueStart">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/issueStart">
     <rdfs:label>issueStart</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/issueStart">
@@ -17,6 +20,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/email">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/email">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/email">
     <rdfs:label>email</rdfs:label>
@@ -40,6 +46,12 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Blog"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
     <rdfs:label>hasJournal</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
@@ -50,6 +62,12 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/isRoot">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isRoot">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isRoot">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/ArticleType"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/isRoot">
     <rdfs:label>isRoot</rdfs:label>
@@ -73,6 +91,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublicationGroup">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublicationGroup">
     <rdfs:label>hasPublicationGroup</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublicationGroup">
@@ -83,6 +104,12 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/targetDomain">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/targetDomain">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/targetDomain">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Blog"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/targetDomain">
     <rdfs:label>targetDomain</rdfs:label>
@@ -100,6 +127,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/primaryXmlId">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/ArticleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/primaryXmlId">
     <rdfs:label>primaryXmlId</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/primaryXmlId">
@@ -115,6 +145,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublisher">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublisher">
     <rdfs:label>hasPublisher</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublisher">
@@ -127,6 +160,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasSubject">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasSubject">
     <rdfs:label>hasSubject</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasSubject">
@@ -137,6 +173,30 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Technique"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/PublishState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Database"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Relation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/SummaryType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Blog"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
     <rdfs:label>hash</rdfs:label>
@@ -152,6 +212,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/volumeStart">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeStart">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/volumeStart">
     <rdfs:label>volumeStart</rdfs:label>
@@ -175,6 +238,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/typeLabel">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/typeLabel">
     <rdfs:label>typeLabel</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/typeLabel">
@@ -190,6 +256,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/isPalgraveSubject">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPalgraveSubject">
     <rdfs:label>isPalgraveSubject</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/isPalgraveSubject">
@@ -203,6 +272,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasPrimaryArticleType">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPrimaryArticleType">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/ArticleType"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasPrimaryArticleType">
     <rdfs:label>hasPrimaryArticleType</rdfs:label>
@@ -385,6 +457,12 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/dateStart">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateStart">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Blog"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateStart">
     <rdfs:label>dateStart</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/dateStart">
@@ -398,6 +476,12 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
     <rdfs:label>subjectPath</rdfs:label>
@@ -415,6 +499,12 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasDomain">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasDomain">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Blog"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasDomain">
     <rdfs:label>hasDomain</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasDomain">
@@ -425,6 +515,33 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/id">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Technique"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/PublishState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Database"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/ArticleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/SummaryType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Relation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Blog"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/id">
     <rdfs:label>id</rdfs:label>
@@ -448,6 +565,33 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Technique"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/PublishState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Database"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/ArticleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Relation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/SummaryType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Blog"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
     <rdfs:label>isPublishReady</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
@@ -469,6 +613,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/related">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/related">
     <rdfs:label>related</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/related">
@@ -479,6 +626,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/xmlUriTemplate">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlUriTemplate">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/xmlUriTemplate">
     <rdfs:label>xmlUriTemplate</rdfs:label>
@@ -496,6 +646,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/targetUriTemplate">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Database"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/targetUriTemplate">
     <rdfs:label>targetUriTemplate</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/targetUriTemplate">
@@ -509,6 +662,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/sortWeight">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/sortWeight">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/sortWeight">
     <rdfs:label>sortWeight</rdfs:label>
@@ -526,6 +682,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/assetFolderName">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/assetFolderName">
     <rdfs:label>assetFolderName</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/assetFolderName">
@@ -539,6 +698,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/volumeEnd">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeEnd">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/volumeEnd">
     <rdfs:label>volumeEnd</rdfs:label>
@@ -556,6 +718,18 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/domain">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/domain">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/ArticleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/domain">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/domain">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Blog"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/domain">
     <rdfs:label>domain</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/domain">
@@ -571,6 +745,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/replacedBy">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/replacedBy">
     <rdfs:label>replacedBy</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/replacedBy">
@@ -581,6 +758,12 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/isLeaf">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isLeaf">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isLeaf">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/ArticleType"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/isLeaf">
     <rdfs:label>isLeaf</rdfs:label>
@@ -598,6 +781,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/subtypeLabel">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/subtypeLabel">
     <rdfs:label>subtypeLabel</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/subtypeLabel">
@@ -611,6 +797,12 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/content">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/content">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/content">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Blog"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/content">
     <rdfs:label>content</rdfs:label>
@@ -628,6 +820,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/isIssueBased">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isIssueBased">
     <rdfs:label>isIssueBased</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/isIssueBased">
@@ -643,6 +838,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasBlog">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasBlog">
     <rdfs:label>hasBlog</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasBlog">
@@ -655,6 +853,12 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasRoot">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasRoot">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/ArticleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasRoot">
     <rdfs:label>hasRoot</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasRoot">
@@ -665,6 +869,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/status">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/status">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/ArticleType"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/status">
     <rdfs:label>status</rdfs:label>
@@ -682,6 +889,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/npgid">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/npgid">
     <rdfs:label>npgid</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/npgid">
@@ -695,6 +905,12 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/pcode">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/pcode">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/pcode">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Blog"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/pcode">
     <rdfs:label>pcode</rdfs:label>
@@ -712,6 +928,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/baseUriTemplate">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/baseUriTemplate">
     <rdfs:label>baseUriTemplate</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/baseUriTemplate">
@@ -725,6 +944,33 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/code">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Technique"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/PublishState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Database"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/ArticleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Relation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/SummaryType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Blog"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/code">
     <rdfs:label>code</rdfs:label>
@@ -748,6 +994,12 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Blog"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
     <rdfs:label>dateEnd</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
@@ -763,6 +1015,9 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/replaces">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/replaces">
     <rdfs:label>replaces</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/replaces">
@@ -773,6 +1028,12 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/treeDepth">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/treeDepth">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/treeDepth">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/ArticleType"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/treeDepth">
     <rdfs:label>treeDepth</rdfs:label>
@@ -790,6 +1051,12 @@
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/xmlId">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/PublishState"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlId">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/ArticleType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlId">
     <rdfs:label>xmlId</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/xmlId">
@@ -803,6 +1070,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/sortLetter">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/sortLetter">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/sortLetter">
     <rdfs:label>sortLetter</rdfs:label>
@@ -824,6 +1094,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/submittedBy">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/submittedBy">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/submittedBy">
     <rdfs:label>submittedBy</rdfs:label>
@@ -851,6 +1124,9 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/issueEnd">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/issueEnd">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/issueEnd">
     <rdfs:label>issueEnd</rdfs:label>
