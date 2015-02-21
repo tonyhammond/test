@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xmlns:aos="http://purl.org/ao/selectors/" xmlns:api="http://purl.org/linked-data/api/vocab#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:npg="http://ns.nature.com/terms/" xmlns:npgd="http://ns.nature.com/datasets/" xmlns:npgg="http://ns.nature.com/graphs/" xmlns:npgx="http://ns.nature.com/extensions/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:ppt="http://schema.semantic-web.at/ppt/" xmlns:pptSchema="https://raw.githubusercontent.com/tonyhammond/test/master/" xmlns:prism="http://prismstandard.org/namespaces/basic/2.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sc="http://purl.org/science/owl/sciencecommons/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:void="http://rdfs.org/ns/void#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-  <rdf:Description rdf:about="http://ns.nature.com/terms/ArticleType">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/issueStart">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/ArticleType">
-    <rdfs:label>ArticleType</rdfs:label>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/issueStart">
+    <rdfs:label>issueStart</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/Blog">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/issueStart">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/Blog">
-    <rdfs:label>Blog</rdfs:label>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/issueStart">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/Database">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/issueStart">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/Database">
-    <rdfs:label>Database</rdfs:label>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/email">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/Journal">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/email">
+    <rdfs:label>email</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/Journal">
-    <rdfs:label>Journal</rdfs:label>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/email">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/email">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/email">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/PublishState">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
@@ -30,11 +36,134 @@
   <rdf:Description rdf:about="http://ns.nature.com/terms/PublishState">
     <rdfs:label>PublishState</rdfs:label>
   </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
+    <rdfs:label>hasJournal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isRoot">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isRoot">
+    <rdfs:label>isRoot</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isRoot">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isRoot">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isRoot">
+    <ppt:valueRestriction>BOOLEAN</ppt:valueRestriction>
+  </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/Relation">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/Relation">
     <rdfs:label>Relation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublicationGroup">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublicationGroup">
+    <rdfs:label>hasPublicationGroup</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublicationGroup">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublicationGroup">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/targetDomain">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/targetDomain">
+    <rdfs:label>targetDomain</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/targetDomain">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/targetDomain">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/targetDomain">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/primaryXmlId">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/primaryXmlId">
+    <rdfs:label>primaryXmlId</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/primaryXmlId">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/primaryXmlId">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/primaryXmlId">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublisher">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublisher">
+    <rdfs:label>hasPublisher</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublisher">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublisher">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasSubject">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasSubject">
+    <rdfs:label>hasSubject</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasSubject">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasSubject">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
+    <rdfs:label>hash</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeStart">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeStart">
+    <rdfs:label>volumeStart</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeStart">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeStart">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeStart">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/Subject">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
@@ -42,524 +171,47 @@
   <rdf:Description rdf:about="http://ns.nature.com/terms/Subject">
     <rdfs:label>Subject</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/SummaryType">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/SummaryType">
-    <rdfs:label>SummaryType</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/Technique">
-    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/Technique">
-    <rdfs:label>Technique</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/assetFolderName">
+  <rdf:Description rdf:about="http://ns.nature.com/terms/typeLabel">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/assetFolderName">
+  <rdf:Description rdf:about="http://ns.nature.com/terms/typeLabel">
+    <rdfs:label>typeLabel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/typeLabel">
     <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/assetFolderName">
+  <rdf:Description rdf:about="http://ns.nature.com/terms/typeLabel">
     <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/assetFolderName">
+  <rdf:Description rdf:about="http://ns.nature.com/terms/typeLabel">
     <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/baseUriTemplate">
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPalgraveSubject">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/baseUriTemplate">
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPalgraveSubject">
+    <rdfs:label>isPalgraveSubject</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPalgraveSubject">
     <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/baseUriTemplate">
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPalgraveSubject">
     <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/baseUriTemplate">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/content">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/content">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/content">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/content">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/dateStart">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/dateStart">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/dateStart">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/dateStart">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/domain">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/domain">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/domain">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/domain">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/email">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/email">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/email">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/email">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasBlog">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasBlog">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasBlog">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasDomain">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasDomain">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasDomain">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasJournal">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPalgraveSubject">
+    <ppt:valueRestriction>BOOLEAN</ppt:valueRestriction>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasPrimaryArticleType">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPrimaryArticleType">
+    <rdfs:label>hasPrimaryArticleType</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasPrimaryArticleType">
     <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasPrimaryArticleType">
     <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublicationGroup">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublicationGroup">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublicationGroup">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublisher">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublisher">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasPublisher">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasRoot">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasRoot">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasRoot">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasSubject">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasSubject">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hasSubject">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/hash">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isIssueBased">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isIssueBased">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isIssueBased">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isIssueBased">
-    <ppt:valueRestriction>BOOLEAN</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isLeaf">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isLeaf">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isLeaf">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isLeaf">
-    <ppt:valueRestriction>BOOLEAN</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isPalgraveSubject">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isPalgraveSubject">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isPalgraveSubject">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isPalgraveSubject">
-    <ppt:valueRestriction>BOOLEAN</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
-    <ppt:valueRestriction>BOOLEAN</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isRoot">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isRoot">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isRoot">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/isRoot">
-    <ppt:valueRestriction>BOOLEAN</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/issueEnd">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/issueEnd">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/issueEnd">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/issueEnd">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/issueStart">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/issueStart">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/issueStart">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/issueStart">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/npgid">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/npgid">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/npgid">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/npgid">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/pcode">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/pcode">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/pcode">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/pcode">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/primaryXmlId">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/primaryXmlId">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/primaryXmlId">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/primaryXmlId">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/related">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/related">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/related">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/replacedBy">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/replacedBy">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/replacedBy">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/replaces">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/replaces">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/replaces">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/sortLetter">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/sortLetter">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/sortLetter">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/sortLetter">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/sortWeight">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/sortWeight">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/sortWeight">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/sortWeight">
-    <ppt:valueRestriction>LABEL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/status">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/status">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/status">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/status">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/submittedBy">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/submittedBy">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/submittedBy">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/submittedBy">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/subtypeLabel">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/subtypeLabel">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/subtypeLabel">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/subtypeLabel">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/targetDomain">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/targetDomain">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/targetDomain">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/targetDomain">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/targetUriTemplate">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/targetUriTemplate">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/targetUriTemplate">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/targetUriTemplate">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/treeDepth">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/treeDepth">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/treeDepth">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/treeDepth">
-    <ppt:valueRestriction>INTEGER</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/typeLabel">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/typeLabel">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/typeLabel">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/typeLabel">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeEnd">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeEnd">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeEnd">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeEnd">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeStart">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeStart">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeStart">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeStart">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlId">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlId">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlId">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlId">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlUriTemplate">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlUriTemplate">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlUriTemplate">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlUriTemplate">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
   </rdf:Description>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/CustomSchema"/>
@@ -728,5 +380,488 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <ppt:containsDirectedProperty rdf:resource="http://ns.nature.com/terms/replacedBy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateStart">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateStart">
+    <rdfs:label>dateStart</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateStart">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateStart">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateStart">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
+    <rdfs:label>subjectPath</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasDomain">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasDomain">
+    <rdfs:label>hasDomain</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasDomain">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasDomain">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <rdfs:label>id</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/id">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/Technique">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/Technique">
+    <rdfs:label>Technique</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <rdfs:label>isPublishReady</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isPublishReady">
+    <ppt:valueRestriction>BOOLEAN</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/Journal">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/Journal">
+    <rdfs:label>Journal</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/related">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/related">
+    <rdfs:label>related</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/related">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/related">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlUriTemplate">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlUriTemplate">
+    <rdfs:label>xmlUriTemplate</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlUriTemplate">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlUriTemplate">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlUriTemplate">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/targetUriTemplate">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/targetUriTemplate">
+    <rdfs:label>targetUriTemplate</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/targetUriTemplate">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/targetUriTemplate">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/targetUriTemplate">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/sortWeight">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/sortWeight">
+    <rdfs:label>sortWeight</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/sortWeight">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/sortWeight">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/sortWeight">
+    <ppt:valueRestriction>LABEL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/assetFolderName">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/assetFolderName">
+    <rdfs:label>assetFolderName</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/assetFolderName">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/assetFolderName">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/assetFolderName">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeEnd">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeEnd">
+    <rdfs:label>volumeEnd</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeEnd">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeEnd">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/volumeEnd">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/domain">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/domain">
+    <rdfs:label>domain</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/domain">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/domain">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/domain">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/replacedBy">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/replacedBy">
+    <rdfs:label>replacedBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/replacedBy">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/replacedBy">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isLeaf">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isLeaf">
+    <rdfs:label>isLeaf</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isLeaf">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isLeaf">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isLeaf">
+    <ppt:valueRestriction>BOOLEAN</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/subtypeLabel">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/subtypeLabel">
+    <rdfs:label>subtypeLabel</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/subtypeLabel">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/subtypeLabel">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/subtypeLabel">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/content">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/content">
+    <rdfs:label>content</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/content">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/content">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/content">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isIssueBased">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isIssueBased">
+    <rdfs:label>isIssueBased</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isIssueBased">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isIssueBased">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/isIssueBased">
+    <ppt:valueRestriction>BOOLEAN</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasBlog">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasBlog">
+    <rdfs:label>hasBlog</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasBlog">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasBlog">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasRoot">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasRoot">
+    <rdfs:label>hasRoot</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasRoot">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/hasRoot">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/status">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/status">
+    <rdfs:label>status</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/status">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/status">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/status">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/npgid">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/npgid">
+    <rdfs:label>npgid</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/npgid">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/npgid">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/npgid">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/pcode">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/pcode">
+    <rdfs:label>pcode</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/pcode">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/pcode">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/pcode">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/baseUriTemplate">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/baseUriTemplate">
+    <rdfs:label>baseUriTemplate</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/baseUriTemplate">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/baseUriTemplate">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/baseUriTemplate">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <rdfs:label>code</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/code">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/Database">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/Database">
+    <rdfs:label>Database</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
+    <rdfs:label>dateEnd</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/replaces">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/replaces">
+    <rdfs:label>replaces</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/replaces">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/replaces">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/treeDepth">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/treeDepth">
+    <rdfs:label>treeDepth</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/treeDepth">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/treeDepth">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/treeDepth">
+    <ppt:valueRestriction>INTEGER</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlId">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlId">
+    <rdfs:label>xmlId</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlId">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlId">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/xmlId">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/sortLetter">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/sortLetter">
+    <rdfs:label>sortLetter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/sortLetter">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/sortLetter">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/sortLetter">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/ArticleType">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/ArticleType">
+    <rdfs:label>ArticleType</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/submittedBy">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/submittedBy">
+    <rdfs:label>submittedBy</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/submittedBy">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/submittedBy">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/submittedBy">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/SummaryType">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/SummaryType">
+    <rdfs:label>SummaryType</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/Blog">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/Blog">
+    <rdfs:label>Blog</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/issueEnd">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/issueEnd">
+    <rdfs:label>issueEnd</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/issueEnd">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/issueEnd">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/issueEnd">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
   </rdf:Description>
 </rdf:RDF>
