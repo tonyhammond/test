@@ -1,80 +1,364 @@
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix ppt: <http://schema.semantic-web.at/ppt/> .
-@prefix pptSchema: <https://raw.githubusercontent.com/tonyhammond/test/master/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix : <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xmpRights:  <http://ns.adobe.com/xap/1.0/rights/> .
+@prefix npg:     <http://ns.nature.com/terms/> .
+@prefix aos:     <http://purl.org/ao/selectors/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix npgd:    <http://ns.nature.com/datasets/> .
+@prefix api:     <http://purl.org/linked-data/api/vocab#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix prism:   <http://prismstandard.org/namespaces/basic/2.1/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix pptSchema:  <https://raw.githubusercontent.com/tonyhammond/test/master/> .
+@prefix xmp:     <http://ns.adobe.com/xap/1.0/> .
+@prefix npgg:    <http://ns.nature.com/graphs/> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+@prefix sc:      <http://purl.org/science/owl/sciencecommons/> .
+@prefix ppt:     <http://schema.semantic-web.at/ppt/> .
+@prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
+@prefix bibo:    <http://purl.org/ontology/bibo/> .
+@prefix xmpMM:   <http://ns.adobe.com/xap/1.0/mm/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix npgx:    <http://ns.nature.com/extensions/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 
-@prefix npg: <http://ns.nature.com/terms/> .
+npg:ArticleType
+      a       rdfs:Class ;
+      rdfs:label "ArticleType" .
 
+npg:Blog
+      a       rdfs:Class ;
+      rdfs:label "Blog" .
 
-pptSchema:NPG
-    ppt:containsAttributeProperty npg:code , npg:id , npg:isPrimaryArticleType , npg:isPublishReady , npg:treeDepth ;
-    # ppt:containsCustomType npg:Article, npg:Journal, npg:Subject, npg:XArticleType ;
-    ppt:containsCustomType npg:Article, npg:Journal, npg:Subject ;
-    a ppt:CustomSchema ;
-    :label "NPG" .
-
-
-npg:Article
-    a :Class ;
-    :label "Article" .
+npg:Database
+      a       rdfs:Class ;
+      rdfs:label "Database" .
 
 npg:Journal
-    a :Class ;
-    :label "Journal" .
+      a       rdfs:Class ;
+      rdfs:label "Journal" .
+
+npg:PublishState
+      a       rdfs:Class ;
+      rdfs:label "PublishState" .
+
+npg:Relation
+      a       rdfs:Class ;
+      rdfs:label "Relation" .
 
 npg:Subject
-    a :Class ;
-    :label "Subject" .
+      a       rdfs:Class ;
+      rdfs:label "Subject" .
 
-# npg:XArticleType
-#     a :Class ;
-#     :label "Subject" .
+npg:SummaryType
+      a       rdfs:Class ;
+      rdfs:label "SummaryType" .
+
+npg:Technique
+      a       rdfs:Class ;
+      rdfs:label "Technique" .
+
+npg:assetFolderName
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:baseUriTemplate
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
 
 npg:code
-    dcterms:hasVersion "4.2.0" ;
-    ppt:skosDomain skos:Concept ;
-    ppt:unique false ;
-    ppt:valueRestriction "LITERAL" ;
-    a ppt:AttributeProperty ;
-    :domain npg:Subject ;
-    :label "code" .
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:content
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:dateEnd
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:dateStart
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:domain
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:email
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:hasBlog
+      a       ppt:DirectedProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept .
+
+npg:hasDomain
+      a       ppt:DirectedProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept .
+
+npg:hasJournal
+      a       ppt:DirectedProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept .
+
+npg:hasPrimaryArticleType
+      a       ppt:DirectedProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept .
+
+npg:hasPublicationGroup
+      a       ppt:DirectedProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept .
+
+npg:hasPublisher
+      a       ppt:DirectedProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept .
+
+npg:hasRoot
+      a       ppt:DirectedProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept .
+
+npg:hasSubject
+      a       ppt:DirectedProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept .
+
+npg:hash
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
 
 npg:id
-    dcterms:hasVersion "4.2.0" ;
-    ppt:skosDomain skos:Concept ;
-    ppt:unique false ;
-    ppt:valueRestriction "LITERAL" ;
-    a ppt:AttributeProperty ;
-    :domain npg:Subject ;
-    :label "id"  .
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
 
-npg:isPrimaryArticleType
-    dcterms:hasVersion "4.2.0" ;
-    ppt:skosDomain skos:Concept ;
-    ppt:unique true ;
-    ppt:valueRestriction "BOOLEAN" ;
-    a ppt:AttributeProperty ;
-    :domain npg:Subject ;
-    :label "isPrimaryArticleType" .
+npg:isIssueBased
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "BOOLEAN" .
+
+npg:isLeaf
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "BOOLEAN" .
+
+npg:isPalgraveSubject
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "BOOLEAN" .
 
 npg:isPublishReady
-    dcterms:hasVersion "4.2.0" ;
-    ppt:skosDomain skos:Concept ;
-    ppt:unique true ;
-    ppt:valueRestriction "BOOLEAN" ;
-    a ppt:AttributeProperty ;
-    :domain npg:Subject ;
-    :label "isPublishReady" .
-    
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "BOOLEAN" .
+
+npg:isRoot
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "BOOLEAN" .
+
+npg:issueEnd
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:issueStart
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:npgid
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:pcode
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:primaryXmlId
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:related
+      a       ppt:DirectedProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept .
+
+npg:replacedBy
+      a       ppt:DirectedProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept .
+
+npg:replaces
+      a       ppt:DirectedProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept .
+
+npg:sortLetter
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:sortWeight
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LABEL" .
+
+npg:status
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:subjectPath
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:submittedBy
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:subtypeLabel
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:targetDomain
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:targetUriTemplate
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
 npg:treeDepth
-    dcterms:hasVersion "4.2.0" ;
-    ppt:skosDomain skos:Concept ;
-    ppt:unique true ;
-    ppt:valueRestriction "LITERAL" ;
-    a ppt:AttributeProperty ;
-    :domain npg:Subject ;
-    :label "treeDepth"  .
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "INTEGER" .
+
+npg:typeLabel
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:volumeEnd
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:volumeStart
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:xmlId
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:xmlUriTemplate
+      a       ppt:AttributeProperty ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+pptSchema:NPG
+      a       ppt:CustomSchema ;
+      rdfs:label "NPG" ;
+      ppt:containsAttributeProperty
+              npg:targetUriTemplate , npg:issueStart , npg:email , npg:sortWeight , npg:assetFolderName , npg:volumeEnd , npg:isRoot , npg:domain , npg:subtypeLabel , npg:targetDomain , npg:isLeaf , npg:content , npg:primaryXmlId , npg:isIssueBased , npg:status , npg:hash , npg:npgid , npg:volumeStart , npg:pcode , npg:baseUriTemplate , npg:code , npg:typeLabel , npg:isPalgraveSubject , npg:dateEnd , npg:xmlId , npg:treeDepth , npg:dateStart , npg:subjectPath , npg:id , npg:isPublishReady , npg:sortLetter , npg:submittedBy , npg:xmlUriTemplate , npg:issueEnd ;
+      ppt:containsCustomType
+              npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:ArticleType , npg:Relation , npg:SummaryType , npg:Journal , npg:Blog ;
+      ppt:containsDirectedProperty
+              npg:hasDomain , npg:hasJournal , npg:hasBlog , npg:replaces , npg:hasPrimaryArticleType , npg:hasPublisher , npg:related , npg:hasRoot , npg:hasPublicationGroup , npg:hasSubject , npg:replacedBy .
 
