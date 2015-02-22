@@ -1,35 +1,35 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix : <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://ns.nature.com/tony/Legal_Stuff>
-    <http://schema.semantic-web.at/ppt/containsAttributeProperty> <http://ns.nature.com/tony/Legal_Stuff/has_beach> ;
-    <http://schema.semantic-web.at/ppt/containsCustomType> <http://ns.nature.com/tony/Legal_Stuff/District>, <http://ns.nature.com/tony/Legal_Stuff/Legal_documents> ;
-    <http://schema.semantic-web.at/ppt/containsDirectedProperty> <http://ns.nature.com/tony/Legal_Stuff/related_region> ;
+<http://ns.nature.com/tony/Example>
+    <http://schema.semantic-web.at/ppt/containsAttributeProperty> <http://ns.nature.com/tony/Example/has_beach> ;
+    <http://schema.semantic-web.at/ppt/containsCustomType> <http://ns.nature.com/tony/Example/District>, <http://ns.nature.com/tony/Example/Legal_documents> ;
+    <http://schema.semantic-web.at/ppt/containsDirectedProperty> <http://ns.nature.com/tony/Example/related_region> ;
     <http://schema.semantic-web.at/ppt/linksToClass> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
     a <http://schema.semantic-web.at/ppt/CustomSchema> ;
-    :label "Legal_Stuff" .
+    :label "Example" .
 
-<http://ns.nature.com/tony/Legal_Stuff/District>
+<http://ns.nature.com/tony/Example/District>
     a :Class ;
     :label "District" ;
     :subClassOf <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
 
-<http://ns.nature.com/tony/Legal_Stuff/Legal_documents>
+<http://ns.nature.com/tony/Example/Legal_documents>
     a :Class ;
     :label "Legal documents" .
 
-<http://ns.nature.com/tony/Legal_Stuff/has_beach>
+<http://ns.nature.com/tony/Example/has_beach>
     <http://purl.org/dc/terms/hasVersion> "4.2.0" ;
-    <http://schema.semantic-web.at/ppt/domain> <http://ns.nature.com/tony/Legal_Stuff/District> ;
+    <http://schema.semantic-web.at/ppt/domain> <http://ns.nature.com/tony/Example/District> ;
     <http://schema.semantic-web.at/ppt/skosDomain> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://schema.semantic-web.at/ppt/unique> true ;
     <http://schema.semantic-web.at/ppt/valueRestriction> "BOOLEAN" ;
     a <http://schema.semantic-web.at/ppt/AttributeProperty> ;
     :label "has beach" .
 
-<http://ns.nature.com/tony/Legal_Stuff/related_region>
+<http://ns.nature.com/tony/Example/related_region>
     <http://purl.org/dc/terms/hasVersion> "4.2.0" ;
-    <http://schema.semantic-web.at/ppt/domain> <http://ns.nature.com/tony/Legal_Stuff/Legal_documents> ;
+    <http://schema.semantic-web.at/ppt/domain> <http://ns.nature.com/tony/Example/Legal_documents> ;
     <http://schema.semantic-web.at/ppt/range> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
     <http://schema.semantic-web.at/ppt/skosDomain> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://schema.semantic-web.at/ppt/skosRange> <http://www.w3.org/2004/02/skos/core#Concept> ;

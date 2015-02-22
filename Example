@@ -2,65 +2,65 @@
 <rdf:RDF
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
-<rdf:Description rdf:about="http://ns.nature.com/tony/Legal_Stuff">
+<rdf:Description rdf:about="http://ns.nature.com/tony/Example">
 	<rdf:type rdf:resource="http://schema.semantic-web.at/ppt/CustomSchema"/>
-	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Legal_Stuff</label>
+	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Example</label>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://ns.nature.com/tony/Legal_Stuff/Legal_documents">
+<rdf:Description rdf:about="http://ns.nature.com/tony/Example/Legal_documents">
 	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://ns.nature.com/tony/Legal_Stuff">
-	<containsCustomType xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/tony/Legal_Stuff/Legal_documents"/>
+<rdf:Description rdf:about="http://ns.nature.com/tony/Example">
+	<containsCustomType xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/tony/Example/Legal_documents"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://ns.nature.com/tony/Legal_Stuff/District">
+<rdf:Description rdf:about="http://ns.nature.com/tony/Example/District">
 	<rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://ns.nature.com/tony/Legal_Stuff">
-	<containsCustomType xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/tony/Legal_Stuff/District"/>
+<rdf:Description rdf:about="http://ns.nature.com/tony/Example">
+	<containsCustomType xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/tony/Example/District"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://ns.nature.com/tony/Legal_Stuff/related_region">
+<rdf:Description rdf:about="http://ns.nature.com/tony/Example/related_region">
 	<rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://ns.nature.com/tony/Legal_Stuff">
-	<containsDirectedProperty xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/tony/Legal_Stuff/related_region"/>
+<rdf:Description rdf:about="http://ns.nature.com/tony/Example">
+	<containsDirectedProperty xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/tony/Example/related_region"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://ns.nature.com/tony/Legal_Stuff/has_beach">
+<rdf:Description rdf:about="http://ns.nature.com/tony/Example/has_beach">
 	<rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://ns.nature.com/tony/Legal_Stuff">
-	<containsAttributeProperty xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/tony/Legal_Stuff/has_beach"/>
+<rdf:Description rdf:about="http://ns.nature.com/tony/Example">
+	<containsAttributeProperty xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/tony/Example/has_beach"/>
 	<linksToClass xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://ns.nature.com/tony/Legal_Stuff/District">
+<rdf:Description rdf:about="http://ns.nature.com/tony/Example/District">
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">District</label>
 	<subClassOf xmlns="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://ns.nature.com/tony/Legal_Stuff/has_beach">
+<rdf:Description rdf:about="http://ns.nature.com/tony/Example/has_beach">
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">has beach</label>
-	<domain xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/tony/Legal_Stuff/District"/>
+	<domain xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/tony/Example/District"/>
 	<skosDomain xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<valueRestriction xmlns="http://schema.semantic-web.at/ppt/">BOOLEAN</valueRestriction>
 	<unique xmlns="http://schema.semantic-web.at/ppt/" rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</unique>
 	<hasVersion xmlns="http://purl.org/dc/terms/">4.2.0</hasVersion>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://ns.nature.com/tony/Legal_Stuff/Legal_documents">
+<rdf:Description rdf:about="http://ns.nature.com/tony/Example/Legal_documents">
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">Legal documents</label>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://ns.nature.com/tony/Legal_Stuff/related_region">
+<rdf:Description rdf:about="http://ns.nature.com/tony/Example/related_region">
 	<label xmlns="http://www.w3.org/2000/01/rdf-schema#">related region</label>
-	<domain xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/tony/Legal_Stuff/Legal_documents"/>
+	<domain xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://ns.nature.com/tony/Example/Legal_documents"/>
 	<range xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
 	<skosDomain xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skosRange xmlns="http://schema.semantic-web.at/ppt/" rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
