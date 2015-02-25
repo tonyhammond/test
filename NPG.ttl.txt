@@ -23,291 +23,55 @@
 @prefix npgx:    <http://ns.nature.com/extensions/> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 
-npg:issueStart
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Journal ;
-      rdfs:label "issueStart" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
-npg:email
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Subject ;
-      rdfs:label "email" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
-npg:PublishState
+npg:ArticleType
       a       rdfs:Class ;
-      rdfs:label "PublishState" .
+      rdfs:label "ArticleType" .
 
-npg:hasJournal
-      a       ppt:DirectedProperty ;
-      rdfs:domain npg:Journal , npg:Blog ;
-      rdfs:label "hasJournal" ;
-      rdfs:range npg:Journal ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:skosRange skos:Concept .
-
-npg:isRoot
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Subject , npg:ArticleType ;
-      rdfs:label "isRoot" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "BOOLEAN" .
-
-npg:Relation
+npg:Blog
       a       rdfs:Class ;
-      rdfs:label "Relation" .
+      rdfs:label "Blog" .
 
-npg:hasPublicationGroup
-      a       ppt:DirectedProperty ;
-      rdfs:domain npg:Journal ;
-      rdfs:label "hasPublicationGroup" ;
-      rdfs:range npg:PublicationGroup ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:skosRange skos:Concept .
-
-npg:targetDomain
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Journal , npg:Blog ;
-      rdfs:label "targetDomain" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
-npg:primaryXmlId
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:ArticleType ;
-      rdfs:label "primaryXmlId" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
-npg:hasPublisher
-      a       ppt:DirectedProperty ;
-      rdfs:domain npg:Journal ;
-      rdfs:label "hasPublisher" ;
-      rdfs:range npg:Publisher ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:skosRange skos:Concept .
-
-npg:hasSubject
-      a       ppt:DirectedProperty ;
-      rdfs:domain npg:Journal ;
-      rdfs:label "hasSubject" ;
-      rdfs:range npg:Subject ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:skosRange skos:Concept .
-
-npg:hash
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:Relation , npg:SummaryType , npg:Journal , npg:Blog ;
-      rdfs:label "hash" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
-npg:volumeStart
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Journal ;
-      rdfs:label "volumeStart" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
-npg:Subject
+npg:Database
       a       rdfs:Class ;
-      rdfs:label "Subject" .
-
-npg:typeLabel
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Subject ;
-      rdfs:label "typeLabel" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
-npg:isPalgraveSubject
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Subject ;
-      rdfs:label "isPalgraveSubject" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "BOOLEAN" .
-
-npg:hasPrimaryArticleType
-      a       ppt:DirectedProperty ;
-      rdfs:domain npg:ArticleType ;
-      rdfs:label "hasPrimaryArticleType" ;
-      rdfs:range npg:PrimaryArticleType ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:skosRange skos:Concept .
-
-pptSchema:NPG
-      a       ppt:CustomSchema ;
-      rdfs:label "NPG" ;
-      ppt:containsAttributeProperty
-              npg:targetUriTemplate , npg:issueStart , npg:email , npg:sortWeight , npg:assetFolderName , npg:volumeEnd , npg:isRoot , npg:domain , npg:subtypeLabel , npg:targetDomain , npg:isLeaf , npg:content , npg:primaryXmlId , npg:isIssueBased , npg:status , npg:hash , npg:npgid , npg:volumeStart , npg:pcode , npg:baseUriTemplate , npg:code , npg:typeLabel , npg:isPalgraveSubject , npg:dateEnd , npg:xmlId , npg:treeDepth , npg:dateStart , npg:subjectPath , npg:id , npg:isPublishReady , npg:sortLetter , npg:submittedBy , npg:xmlUriTemplate , npg:issueEnd ;
-      ppt:containsCustomType
-              npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:ArticleType , npg:Relation , npg:SummaryType , npg:Journal , npg:Blog ;
-      ppt:containsDirectedProperty
-              npg:hasDomain , npg:hasJournal , npg:hasBlog , npg:replaces , npg:hasPrimaryArticleType , npg:hasPublisher , npg:related , npg:hasRoot , npg:hasPublicationGroup , npg:hasSubject , npg:replacedBy .
-
-npg:dateStart
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Journal , npg:Blog ;
-      rdfs:label "dateStart" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
-npg:subjectPath
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Subject , npg:Journal ;
-      rdfs:label "subjectPath" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
-npg:hasDomain
-      a       ppt:DirectedProperty ;
-      rdfs:domain npg:Journal , npg:Blog ;
-      rdfs:label "hasDomain" ;
-      rdfs:range npg:Domain ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:skosRange skos:Concept .
-
-npg:id
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:ArticleType , npg:SummaryType , npg:Relation , npg:Journal , npg:Blog ;
-      rdfs:label "id" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
-npg:Technique
-      a       rdfs:Class ;
-      rdfs:label "Technique" .
-
-npg:isPublishReady
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:ArticleType , npg:Relation , npg:Journal , npg:SummaryType , npg:Blog ;
-      rdfs:label "isPublishReady" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "BOOLEAN" .
+      rdfs:label "Database" .
 
 npg:Journal
       a       rdfs:Class ;
       rdfs:label "Journal" .
 
-npg:related
-      a       ppt:DirectedProperty ;
-      rdfs:domain npg:Subject ;
-      rdfs:label "related" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:skosRange skos:Concept .
+npg:PublishState
+      a       rdfs:Class ;
+      rdfs:label "PublishState" .
 
-npg:xmlUriTemplate
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Journal ;
-      rdfs:label "xmlUriTemplate" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
+npg:Relation
+      a       rdfs:Class ;
+      rdfs:label "Relation" .
 
-npg:targetUriTemplate
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Database ;
-      rdfs:label "targetUriTemplate" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
+npg:Subject
+      a       rdfs:Class ;
+      rdfs:label "Subject" .
 
-npg:sortWeight
+npg:SummaryType
+      a       rdfs:Class ;
+      rdfs:label "SummaryType" .
+
+npg:Technique
+      a       rdfs:Class ;
+      rdfs:label "Technique" .
+
+npg:class
       a       ppt:AttributeProperty ;
-      rdfs:domain npg:Journal ;
-      rdfs:label "sortWeight" ;
+      rdfs:domain npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:ArticleType , npg:SummaryType , npg:Journal , npg:Relation , npg:Blog ;
+      rdfs:label "class" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
       ppt:valueRestriction
               "LABEL" .
 
-npg:assetFolderName
+npg:code
       a       ppt:AttributeProperty ;
-      rdfs:domain npg:Journal ;
-      rdfs:label "assetFolderName" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
-npg:volumeEnd
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Journal ;
-      rdfs:label "volumeEnd" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
-npg:domain
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Subject , npg:ArticleType , npg:Journal , npg:Blog ;
-      rdfs:label "domain" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
-npg:replacedBy
-      a       ppt:DirectedProperty ;
-      rdfs:domain npg:Journal ;
-      rdfs:label "replacedBy" ;
-      rdfs:range npg:Journal ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:skosRange skos:Concept .
-
-npg:isLeaf
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Subject , npg:ArticleType ;
-      rdfs:label "isLeaf" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "BOOLEAN" .
-
-npg:subtypeLabel
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Subject ;
-      rdfs:label "subtypeLabel" ;
+      rdfs:domain npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:ArticleType , npg:Relation , npg:SummaryType , npg:Journal , npg:Blog ;
+      rdfs:label "code" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
       ppt:valueRestriction
@@ -322,20 +86,101 @@ npg:content
       ppt:valueRestriction
               "LITERAL" .
 
-npg:isIssueBased
+npg:dateEnd
       a       ppt:AttributeProperty ;
-      rdfs:domain npg:Journal ;
-      rdfs:label "isIssueBased" ;
+      rdfs:domain npg:Journal , npg:Blog ;
+      rdfs:label "dateEnd" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
       ppt:valueRestriction
-              "BOOLEAN" .
+              "LITERAL" .
+
+npg:dateStart
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal , npg:Blog ;
+      rdfs:label "dateStart" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:domain
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject , npg:ArticleType , npg:Journal , npg:Blog ;
+      rdfs:label "domain" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:email
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject ;
+      rdfs:label "email" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:graph
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:ArticleType , npg:Relation , npg:Journal , npg:SummaryType , npg:Blog ;
+      rdfs:label "graph" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LABEL" .
 
 npg:hasBlog
       a       ppt:DirectedProperty ;
       rdfs:domain npg:Journal ;
       rdfs:label "hasBlog" ;
       rdfs:range npg:Blog ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:skosRange skos:Concept .
+
+npg:hasDomain
+      a       ppt:DirectedProperty ;
+      rdfs:domain npg:Journal , npg:Blog ;
+      rdfs:label "hasDomain" ;
+      rdfs:range npg:Domain ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:skosRange skos:Concept .
+
+npg:hasJournal
+      a       ppt:DirectedProperty ;
+      rdfs:domain npg:Journal , npg:Blog ;
+      rdfs:label "hasJournal" ;
+      rdfs:range npg:Journal ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:skosRange skos:Concept .
+
+npg:hasPrimaryArticleType
+      a       ppt:DirectedProperty ;
+      rdfs:domain npg:ArticleType ;
+      rdfs:label "hasPrimaryArticleType" ;
+      rdfs:range npg:PrimaryArticleType ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:skosRange skos:Concept .
+
+npg:hasPublicationGroup
+      a       ppt:DirectedProperty ;
+      rdfs:domain npg:Journal ;
+      rdfs:label "hasPublicationGroup" ;
+      rdfs:range npg:PublicationGroup ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:skosRange skos:Concept .
+
+npg:hasPublisher
+      a       ppt:DirectedProperty ;
+      rdfs:domain npg:Journal ;
+      rdfs:label "hasPublisher" ;
+      rdfs:range npg:Publisher ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
       ppt:skosRange skos:Concept .
@@ -349,10 +194,109 @@ npg:hasRoot
       ppt:skosDomain skos:Concept ;
       ppt:skosRange skos:Concept .
 
-npg:status
+npg:id
       a       ppt:AttributeProperty ;
-      rdfs:domain npg:ArticleType ;
-      rdfs:label "status" ;
+      rdfs:domain npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:ArticleType , npg:SummaryType , npg:Relation , npg:Journal , npg:Blog ;
+      rdfs:label "id" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:isEventWorkflow
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
+      rdfs:label "isEventWorkflow" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "BOOLEAN" .
+
+npg:isIssueBased
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
+      rdfs:label "isIssueBased" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "BOOLEAN" .
+
+npg:isLeaf
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject , npg:ArticleType ;
+      rdfs:label "isLeaf" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "BOOLEAN" .
+
+npg:isMaestroPlatform
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
+      rdfs:label "isMaestroPlatform" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "BOOLEAN" .
+
+npg:isPalgraveSubject
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject ;
+      rdfs:label "isPalgraveSubject" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "BOOLEAN" .
+
+npg:isPublishReady
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:ArticleType , npg:Relation , npg:Journal , npg:SummaryType , npg:Blog ;
+      rdfs:label "isPublishReady" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "BOOLEAN" .
+
+npg:isRepeatable
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Relation ;
+      rdfs:label "isRepeatable" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "BOOLEAN" .
+
+npg:isRoot
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject , npg:ArticleType ;
+      rdfs:label "isRoot" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "BOOLEAN" .
+
+npg:isTestInstance
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
+      rdfs:label "isTestInstance" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "BOOLEAN" .
+
+npg:issueEnd
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
+      rdfs:label "issueEnd" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:issueStart
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
+      rdfs:label "issueStart" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
       ppt:valueRestriction
@@ -376,36 +320,31 @@ npg:pcode
       ppt:valueRestriction
               "LITERAL" .
 
-npg:baseUriTemplate
+npg:primaryXmlId
       a       ppt:AttributeProperty ;
+      rdfs:domain npg:ArticleType ;
+      rdfs:label "primaryXmlId" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:related
+      a       ppt:DirectedProperty ;
+      rdfs:domain npg:Subject ;
+      rdfs:label "related" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:skosRange skos:Concept .
+
+npg:replacedBy
+      a       ppt:DirectedProperty ;
       rdfs:domain npg:Journal ;
-      rdfs:label "baseUriTemplate" ;
+      rdfs:label "replacedBy" ;
+      rdfs:range npg:Journal ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
-npg:code
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:ArticleType , npg:Relation , npg:SummaryType , npg:Journal , npg:Blog ;
-      rdfs:label "code" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
-npg:Database
-      a       rdfs:Class ;
-      rdfs:label "Database" .
-
-npg:dateEnd
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Journal , npg:Blog ;
-      rdfs:label "dateEnd" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
+      ppt:skosRange skos:Concept .
 
 npg:replaces
       a       ppt:DirectedProperty ;
@@ -416,24 +355,6 @@ npg:replaces
       ppt:skosDomain skos:Concept ;
       ppt:skosRange skos:Concept .
 
-npg:treeDepth
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Subject , npg:ArticleType ;
-      rdfs:label "treeDepth" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "INTEGER" .
-
-npg:xmlId
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:PublishState , npg:ArticleType ;
-      rdfs:label "xmlId" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
 npg:sortLetter
       a       ppt:AttributeProperty ;
       rdfs:domain npg:Subject ;
@@ -443,9 +364,32 @@ npg:sortLetter
       ppt:valueRestriction
               "LITERAL" .
 
-npg:ArticleType
-      a       rdfs:Class ;
-      rdfs:label "ArticleType" .
+npg:sortWeight
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
+      rdfs:label "sortWeight" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LABEL" .
+
+npg:status
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:ArticleType ;
+      rdfs:label "status" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:subjectPath
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject ;
+      rdfs:label "subjectPath" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
 
 npg:submittedBy
       a       ppt:AttributeProperty ;
@@ -456,20 +400,76 @@ npg:submittedBy
       ppt:valueRestriction
               "LITERAL" .
 
-npg:SummaryType
-      a       rdfs:Class ;
-      rdfs:label "SummaryType" .
-
-npg:Blog
-      a       rdfs:Class ;
-      rdfs:label "Blog" .
-
-npg:issueEnd
+npg:subtypeLabel
       a       ppt:AttributeProperty ;
-      rdfs:domain npg:Journal ;
-      rdfs:label "issueEnd" ;
+      rdfs:domain npg:Subject ;
+      rdfs:label "subtypeLabel" ;
       dcterms:hasVersion "4.2.0" ;
       ppt:skosDomain skos:Concept ;
       ppt:valueRestriction
               "LITERAL" .
+
+npg:targetDomain
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal , npg:Blog ;
+      rdfs:label "targetDomain" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:treeDepth
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject , npg:ArticleType ;
+      rdfs:label "treeDepth" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "INTEGER" .
+
+npg:typeLabel
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Subject ;
+      rdfs:label "typeLabel" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:volumeEnd
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
+      rdfs:label "volumeEnd" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:volumeStart
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:Journal ;
+      rdfs:label "volumeStart" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+npg:xmlId
+      a       ppt:AttributeProperty ;
+      rdfs:domain npg:PublishState , npg:ArticleType ;
+      rdfs:label "xmlId" ;
+      dcterms:hasVersion "4.2.0" ;
+      ppt:skosDomain skos:Concept ;
+      ppt:valueRestriction
+              "LITERAL" .
+
+pptSchema:NPG
+      a       ppt:CustomSchema ;
+      rdfs:label "NPG" ;
+      ppt:containsAttributeProperty
+              npg:isRepeatable , npg:issueStart , npg:email , npg:sortWeight , npg:isEventWorkflow , npg:volumeEnd , npg:isRoot , npg:domain , npg:subtypeLabel , npg:isLeaf , npg:targetDomain , npg:content , npg:primaryXmlId , npg:isIssueBased , npg:status , npg:volumeStart , npg:npgid , npg:isMaestroPlatform , npg:isTestInstance , npg:pcode , npg:code , npg:typeLabel , npg:isPalgraveSubject , npg:dateEnd , npg:class , npg:xmlId , npg:treeDepth , npg:dateStart , npg:subjectPath , npg:id , npg:isPublishReady , npg:graph , npg:sortLetter , npg:submittedBy , npg:issueEnd ;
+      ppt:containsCustomType
+              npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:ArticleType , npg:Relation , npg:SummaryType , npg:Journal , npg:Blog ;
+      ppt:containsDirectedProperty
+              npg:hasDomain , npg:hasJournal , npg:hasBlog , npg:replaces , npg:hasPrimaryArticleType , npg:hasPublisher , npg:related , npg:hasRoot , npg:hasPublicationGroup , npg:replacedBy .
 
