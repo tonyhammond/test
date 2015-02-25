@@ -382,15 +382,6 @@ npg:status
       ppt:valueRestriction
               "LITERAL" .
 
-npg:subjectPath
-      a       ppt:AttributeProperty ;
-      rdfs:domain npg:Subject ;
-      rdfs:label "subjectPath" ;
-      dcterms:hasVersion "4.2.0" ;
-      ppt:skosDomain skos:Concept ;
-      ppt:valueRestriction
-              "LITERAL" .
-
 npg:submittedBy
       a       ppt:AttributeProperty ;
       rdfs:domain npg:Subject ;
@@ -467,7 +458,7 @@ pptSchema:NPG
       a       ppt:CustomSchema ;
       rdfs:label "NPG" ;
       ppt:containsAttributeProperty
-              npg:isRepeatable , npg:issueStart , npg:email , npg:sortWeight , npg:isEventWorkflow , npg:volumeEnd , npg:isRoot , npg:domain , npg:subtypeLabel , npg:isLeaf , npg:targetDomain , npg:content , npg:primaryXmlId , npg:isIssueBased , npg:status , npg:volumeStart , npg:npgid , npg:isMaestroPlatform , npg:isTestInstance , npg:pcode , npg:code , npg:typeLabel , npg:isPalgraveSubject , npg:dateEnd , npg:class , npg:xmlId , npg:treeDepth , npg:dateStart , npg:subjectPath , npg:id , npg:isPublishReady , npg:graph , npg:sortLetter , npg:submittedBy , npg:issueEnd ;
+              npg:isRepeatable , npg:issueStart , npg:email , npg:sortWeight , npg:isEventWorkflow , npg:volumeEnd , npg:isRoot , npg:domain , npg:subtypeLabel , npg:isLeaf , npg:targetDomain , npg:content , npg:primaryXmlId , npg:isIssueBased , npg:status , npg:volumeStart , npg:isMaestroPlatform , npg:npgid , npg:isTestInstance , npg:pcode , npg:code , npg:typeLabel , npg:isPalgraveSubject , npg:dateEnd , npg:class , npg:xmlId , npg:treeDepth , npg:dateStart , npg:id , npg:isPublishReady , npg:graph , npg:sortLetter , npg:submittedBy , npg:issueEnd ;
       ppt:containsCustomType
               npg:Subject , npg:Technique , npg:PublishState , npg:Database , npg:ArticleType , npg:Relation , npg:SummaryType , npg:Journal , npg:Blog ;
       ppt:containsDirectedProperty

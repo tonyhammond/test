@@ -328,10 +328,10 @@
     <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/volumeStart"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
-    <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/npgid"/>
+    <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/isMaestroPlatform"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
-    <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/isMaestroPlatform"/>
+    <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/npgid"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/isTestInstance"/>
@@ -362,9 +362,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/dateStart"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
-    <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/subjectPath"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://raw.githubusercontent.com/tonyhammond/test/master/NPG">
     <ppt:containsAttributeProperty rdf:resource="http://ns.nature.com/terms/id"/>
@@ -460,24 +457,6 @@
     <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/dateStart">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
-    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Subject"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
-    <rdfs:label>subjectPath</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/subjectPath">
     <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/hasDomain">
@@ -984,27 +963,6 @@
   <rdf:Description rdf:about="http://ns.nature.com/terms/Database">
     <rdfs:label>Database</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
-    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
-    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
-    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Blog"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
-    <rdfs:label>dateEnd</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
-    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
-    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
-    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
-  </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/replaces">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/DirectedProperty"/>
   </rdf:Description>
@@ -1025,6 +983,27 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/replaces">
     <ppt:skosRange rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
+    <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Journal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
+    <rdfs:domain rdf:resource="http://ns.nature.com/terms/Blog"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
+    <rdfs:label>dateEnd</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
+    <dcterms:hasVersion>4.2.0</dcterms:hasVersion>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
+    <ppt:skosDomain rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ns.nature.com/terms/dateEnd">
+    <ppt:valueRestriction>LITERAL</ppt:valueRestriction>
   </rdf:Description>
   <rdf:Description rdf:about="http://ns.nature.com/terms/class">
     <rdf:type rdf:resource="http://schema.semantic-web.at/ppt/AttributeProperty"/>
